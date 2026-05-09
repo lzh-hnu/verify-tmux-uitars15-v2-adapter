@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verify tmux for UITARS15_v2: Action Grounding Adapter</title>
+    <meta name="description" content="A verification companion for grounding UITARS15_v2 terminal actions in tmux panes.">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="kicker">tmux verification research</p>
+          <h1>Verify tmux for UITARS15_v2: Action Grounding Adapter</h1>
+          <p class="subtitle">A verification companion for grounding UITARS15_v2 terminal actions in tmux panes.</p>
+          <div class="meta-grid" aria-label="Project metadata">
+            <div class="meta-item"><span class="meta-label">Agent</span><span class="meta-value">UITARS15_v2</span></div>
+            <div class="meta-item"><span class="meta-label">Track</span><span class="meta-value">Adapter Verification</span></div>
+            <div class="meta-item"><span class="meta-label">Artifact</span><span class="meta-value">Static GitHub Pages verification</span></div>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img class="hero-image" src="./assets/hero.png" width="700" height="500" alt="Verification illustration for Verify tmux for UITARS15_v2: Action Grounding Adapter">
+        </figure>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Verification Brief</h2>
+        <div>
+          <p>The adapter is inspected around action grounding: each proposed action should map to an observable pane, command, or focus change.</p>
+          <p>This page uses the common image position and varies the surrounding discussion around action semantics.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Check Question</h2>
+        <div class="callout">
+          <p>How can UITARS15_v2 verify that an intended terminal action actually affected the pane it targeted?</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Trace Notes</h2>
+        <div>
+          <ul>
+            <li>Action proposals include target pane context.</li>
+            <li>Command acknowledgements are linked to visible output changes.</li>
+            <li>Ambiguous focus changes are surfaced as verification warnings.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Review Lens</h2>
+        <div>
+          <ul>
+            <li>Target-pane precision</li>
+            <li>Action acknowledgement</li>
+            <li>Ambiguity reporting</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Verification Discussion</h2>
+        <div>
+          <p>A grounded terminal action is more than keystrokes reaching a process. It also needs a trace that explains where the action landed.</p>
+          <p>Future checks can compare action intent with tmux event streams to catch silent focus drift.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Generated as a public verification site for UITARS15_v2 and tmux adaptation.</p>
+    </footer>
+  </body>
+</html>
